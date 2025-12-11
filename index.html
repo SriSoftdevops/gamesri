@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa Registration 🎄</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-christmas">
+
+  <div class="container-card">
+    <h1 class="title">🎅 Secret Santa Registration 🎁</h1>
+
+    <div class="form-box">
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <input type="text" id="address" placeholder="Enter Your Address">
+      <button onclick="registerAddress()">Submit</button>
+    </div>
+
+    <div id="status-box" class="status-box">Checking status...</div>
+
+    <div id="go-spin" class="hidden">
+      <button onclick="window.location.href='spin.html'" class="spin-btn">
+        Go to Spin Wheel 🎡
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

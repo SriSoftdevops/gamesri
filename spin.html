@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa Spin 🎡</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="spin.js"></script>
+</head>
+<body class="bg-christmas">
+
+  <div class="container-card">
+    <h1 class="title">🎄 Spin the Secret Santa Wheel 🎅</h1>
+
+    <div class="form-box">
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <button onclick="startSpin()">Spin 🎡</button>
+    </div>
+
+    <div class="wheel-container">
+      <div class="wheel" id="wheel"></div>
+      <div class="pointer"></div>
+    </div>
+
+    <div class="result-box" id="result-box">
+      Your assigned person will appear here!
+    </div>
+  </div>
+
+</body>
+</html>

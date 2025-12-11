@@ -1,0 +1,143 @@
+body.bg-christmas {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#a30000, #4b0000);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Card Container */
+.container-card {
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  margin: 50px auto;
+  backdrop-filter: blur(10px);
+  border: 2px solid gold;
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: gold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Status Box */
+.status-box {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffd;
+}
+
+/* Result box */
+.result-box {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Wheel Styling */
+.wheel-container {
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid gold;
+  position: relative;
+  transition: transform 4s cubic-bezier(.17,.67,.17,1.31);
+  overflow: hidden;
+  background: conic-gradient(
+    red 0deg 40deg,
+    green 40deg 80deg,
+    gold 80deg 120deg,
+    red 120deg 160deg,
+    green 160deg 200deg,
+    gold 200deg 240deg,
+    red 240deg 280deg,
+    green 280deg 320deg,
+    gold 320deg 360deg
+  );
+}
+
+.pointer {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid yellow;
+  position: absolute;
+  top: -10px;
+  left: 120px;
+}
+
+.wheel-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0; /* rotate from the start point */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+  text-shadow: 1px 1px 2px black;
+  white-space: nowrap; /* prevent wrapping if name is long */
+}
+
+#wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 5px solid #ffd700;
+}
+
+.wheel-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0; /* rotate from center */
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+}
