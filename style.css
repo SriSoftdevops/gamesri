@@ -109,18 +109,7 @@ button:hover {
   left: 120px;
 }
 
-.wheel-name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 0 0; /* rotate from the start point */
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  pointer-events: none;
-  text-shadow: 1px 1px 2px black;
-  white-space: nowrap; /* prevent wrapping if name is long */
-}
+
 
 #wheel {
   position: relative;
@@ -136,8 +125,12 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: 0 0; /* rotate from center */
+  transform-origin: center center;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   pointer-events: none;
+  white-space: nowrap;
+  text-shadow: 1px 1px 2px black;
 }
+
